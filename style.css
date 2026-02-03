@@ -55,6 +55,7 @@ a{ color: inherit; }
   border-radius: 999px;
   background: rgba(255,255,255,0.45);
   box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+  flex-wrap: wrap;  
 }
 
 .navpill a{
@@ -454,5 +455,19 @@ a{ color: inherit; }
   }
   .project-media {
     min-height: 200px;
+  }
+}
+
+@media (max-width: 520px){
+  .navpill{
+    width: min(520px, 94vw);
+    gap: 8px;
+    padding: 8px 10px;
+    justify-content: center;
+  }
+
+  .navpill a{
+    font-size: 11px;
+    padding: 6px 10px;
   }
 }
