@@ -10,7 +10,7 @@
   --pad: 24px;
   --radius: 18px;
 
-  /* safe serif stack (no external font needed) */
+  /* safe serif stack*/
   --serif: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
 }
@@ -78,9 +78,9 @@ a{ color: inherit; }
 
 /* Main name spacing */
 .hero-name {
-  margin-top: 280px;     /* 上面空一点 */
-  margin-bottom: 32px;  /* 下面空一点 */
-  line-height: 1.15;    /* 行距拉开一点 */
+  margin-top: 280px;    
+  margin-bottom: 32px; 
+  line-height: 1.15; 
 }
 
 /* Hero */
