@@ -458,10 +458,11 @@ a{ color: inherit; }
   }
 }
 
+/* Nav pill responsive only */
 @media (max-width: 520px){
   .navpill{
-    width: min(520px, 94vw);
-    gap: 8px;
+    width: calc(100vw - 24px);   /* 更稳：左右留 12px */
+    gap: 6px;
     padding: 8px 10px;
     justify-content: center;
   }
@@ -469,5 +470,6 @@ a{ color: inherit; }
   .navpill a{
     font-size: 11px;
     padding: 6px 10px;
+    letter-spacing: 0.06em;      /* 小屏减少字间距 */
   }
 }
