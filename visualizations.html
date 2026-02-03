@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visualizations</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="vis.js"></script>
+</head>
+
+<body>
+  <div class="topbar">
+    <nav class="navpill" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="visualizations.html" aria-current="page">Visualizations</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+
+  <main class="container">
+    <section class="card">
+      <h2>Life Breakdown: How My Time Is Spent</h2>
+      <p class="muted">
+        A simple breakdown of how my time and attention are distributed.
+        Percentages reflect the relative weight of each part of my life.
+      </p>
+      <div id="chartArea" class="vis-wrap"></div>
+    </section>
+
+    <section class="card">
+      <h2>Preferred Learning Positions</h2>
+      <p class="muted">
+        A donut chart showing my preferred studying positions. Each slice represents the percentage of time I tend to study in that posture.
+  Hover to see exact values.
+      </p>
+      <div id="artArea" class="vis-wrap"></div>
+    </section>
+
+    <p class="footer">© <span id="year"></span> Jessica Chan</p>
+  </main>
+
+  <!-- optional: reuse the same year logic as Home -->
+  <script>
+    const y = document.getElementById("year");
+    if (y) y.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
