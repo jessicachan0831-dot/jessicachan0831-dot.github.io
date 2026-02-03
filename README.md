@@ -33,6 +33,10 @@ https://jessicachan0831-dot.github.io
 
 Or download the files and open `index.html` in a browser.
 
+## Credits / Resources
+
+Icons: Heroicons (https://heroicons.com)
+
 
 ## Author
 
