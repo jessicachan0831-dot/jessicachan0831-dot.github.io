@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite-api@5.6.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-tooltip"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <script>
+      const options = {
+        init: (view) => {
+          view.tooltip(new vegaTooltip.Handler().call);
+        },
+      };
+      vl.register(vega, vegaLite, options);
+    </script>
+  </head>
+
+  <body>
+  <h1 class="page-title">
+    Assignment 3: Introduction to Data Visualization with Vega-Lite
+    <span class="subtitle">Exploring Global Video Game Sales</span>
+  </h1>
+
+  <div class="container">
+    <div id="view"></div>
+    <div id="view2"></div>
+    <div id="view3"></div>
+    <div id="view4"></div>
+  </div>
+
+  <script src="vis.js"></script>
+</body>
+</html>
