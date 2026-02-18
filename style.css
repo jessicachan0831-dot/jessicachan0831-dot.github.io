@@ -45,7 +45,7 @@ a{ color: inherit; }
 
 .navpill{
   margin: 10px auto;
-  width: min(760px, 94vw);
+  width: min(980px, 96vw);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,8 +55,11 @@ a{ color: inherit; }
   border-radius: 999px;
   background: rgba(255,255,255,0.45);
   box-shadow: 0 6px 20px rgba(0,0,0,0.04);
-  flex-wrap: wrap;  
+
+  flex-wrap: nowrap;     /* ✅ 不允许换行 */
+  white-space: nowrap;   /* ✅ 文本也不换行 */
 }
+
 
 .navpill a{
   text-decoration: none;
@@ -82,6 +85,7 @@ a{ color: inherit; }
   margin-top: 280px;    
   margin-bottom: 32px; 
   line-height: 1.15; 
+
 }
 
 /* Hero */
@@ -461,7 +465,7 @@ a{ color: inherit; }
 /* Nav pill responsive only */
 @media (max-width: 520px){
   .navpill{
-    width: calc(100vw - 24px);   /* 更稳：左右留 12px */
+    width: calc(100vw - 24px);   
     gap: 6px;
     padding: 8px 10px;
     justify-content: center;
@@ -470,6 +474,6 @@ a{ color: inherit; }
   .navpill a{
     font-size: 11px;
     padding: 6px 10px;
-    letter-spacing: 0.06em;      /* 小屏减少字间距 */
+    letter-spacing: 0.06em;  
   }
 }
